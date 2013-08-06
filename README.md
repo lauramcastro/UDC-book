@@ -1,7 +1,7 @@
 UDC-book
 ========
 
-This is a LaTeX template for books, which complies with the corporate image guidelines of the University of A Coruña (www.udc.es).
+This is a LaTeX template for books, which complies with the corporate image guidelines of the University of A Coruña (www.udc.es/identidadecorporativa).
 
 
 To use this template, please take a look at demonstration.tex and use it as your document template.
