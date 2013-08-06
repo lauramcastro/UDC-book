@@ -1,0 +1,233 @@
+%                                                       %
+% -- Demo file -- Use as template for your documents -- %
+%                                                       %
+\documentclass{udc-book}
+
+\usepackage[english]{babel} % Specify language
+\addbibresource{references.bib} % Specify BibTeX bibliography file
+\graphicspath{{images/}} % Specify directories where pictures are to be found
+
+\begin{document}
+
+%-------------------------------------------------------%
+%	TITLE PAGE                                            %
+%-------------------------------------------------------%
+
+\printtitlepage{background}{Document Title}{Author Name}
+\newpage
+\printcopyright{2013}{Author Name}%
+{Licensed under the Creative Commons Attribution-NonCommercial 3.0 Unported License (the ``License''). You may not use this file except in compliance with the License. You may obtain a copy of the License at \url{http://creativecommons.org/licenses/by-nc/3.0}.}
+
+%-------------------------------------------------------%
+%	TABLE OF CONTENTS
+%-------------------------------------------------------%
+
+\chapterimage{chapter_head_1.pdf} % Table of contents heading image
+\pagestyle{empty} % No headers
+\tableofcontents % Print the table of contents
+\cleardoublepage
+\pagestyle{fancy} % Print headers again
+
+%-------------------------------------------------------%
+%	CHAPTER 1
+%-------------------------------------------------------%
+
+\chapterimage{chapter_head_5.pdf} % Chapter heading image
+
+\chapter{Text Chapter}
+
+\section{Paragraphs of Text}\index{Paragraphs of Text}
+
+Blabla bla blablablabla bla, blabla, blabla bla bla blabla blablabla bla blabla
+blablablabla.  Blabla bla blablablabla bla, blabla, blabla bla bla blabla
+blablabla bla blabla blablablabla.  Blabla bla blablablabla bla, blabla, blabla
+bla bla blabla blablabla bla blabla blablablabla.  Blabla bla blablablabla bla,
+blabla, blabla bla bla blabla blablabla bla blabla blablablabla.  Blabla bla
+blablablabla bla, blabla, blabla bla bla blabla blablabla bla blabla
+blablablabla.
+
+Blabla bla blablablabla bla, blabla, blabla bla bla blabla blablabla bla blabla
+blablablabla.  Blabla bla blablablabla bla, blabla, blabla bla bla blabla
+blablabla bla blabla blablablabla.  Blabla bla blablablabla bla, blabla, blabla
+bla bla blabla blablabla bla blabla blablablabla.  Blabla bla blablablabla bla,
+blabla, blabla bla bla blabla blablabla bla blabla blablablabla.  Blabla bla
+blablablabla bla, blabla, blabla bla bla blabla blablabla bla blabla
+blablablabla.
+
+Blabla bla blablablabla bla, blabla, blabla bla bla blabla blablabla bla blabla
+blablablabla.  Blabla bla blablablabla bla, blabla, blabla bla bla blabla
+blablabla bla blabla blablablabla.  Blabla bla blablablabla bla, blabla, blabla
+bla bla blabla blablabla bla blabla blablablabla.  Blabla bla blablablabla bla,
+blabla, blabla bla bla blabla blablabla bla blabla blablablabla.  Blabla bla
+blablablabla bla, blabla, blabla bla bla blabla blablabla bla blabla
+blablablabla.
+
+% - - - - - - - - - - - - - - - - - - - - - - - - - - - %
+
+\section{Citation}\index{Citation}
+
+This statement requires citation \cite{book_key}; this one is more specific
+\cite[122]{article_key}.
+
+% - - - - - - - - - - - - - - - - - - - - - - - - - - - %
+
+\section{Lists}\index{Lists}
+
+Lists are useful to present information in a concise and/or ordered
+way\footnote{Footnote example...}.
+
+\subsection{Numbered List}\index{Lists!Numbered List}
+
+\begin{enumerate}
+\item The first item
+\item The second item
+\item The third item
+\end{enumerate}
+
+\subsection{Bullet Points}\index{Lists!Bullet Points}
+
+\begin{itemize}
+\item The first item
+\item The second item
+\item The third item
+\end{itemize}
+
+\subsection{Descriptions and Definitions}\index{Lists!Descriptions and Definitions}
+
+\begin{description}
+\item[Name] Description
+\item[Word] Definition
+\item[Comment] Elaboration
+\end{description}
+
+%-------------------------------------------------------%
+%	CHAPTER 2
+%-------------------------------------------------------%
+
+\chapterimage{chapter_head_3.pdf}
+
+\chapter{In-text Elements}
+
+\section{Definitions}\index{Definitions}
+
+These are examples of definitions.
+
+\subsection{Several definitions}\index{Definitions!Several Points}
+
+\begin{definition}
+In $E=\mathbb{R}^n$ all norms are equivalent. It has the properties:
+\begin{align}
+& \big| ||\mathbf{x}|| - ||\mathbf{y}|| \big|\leq || \mathbf{x}- \mathbf{y}||\\
+&  ||\sum_{i=1}^n\mathbf{x}_i||\leq \sum_{i=1}^n||\mathbf{x}_i||\quad\text{where $n$ is a finite integer}
+\end{align}
+\end{definition}
+
+\subsection{Single Line}\index{Definitions!Single Line}
+
+\begin{definition}[Name]
+A set $\mathcal{D}(G)$ in dense in $L^2(G)$, $|\cdot|_0$. 
+\end{definition}
+
+% - - - - - - - - - - - - - - - - - - - - - - - - - - - %
+
+\section{Examples}\index{Examples}
+
+This is an example of example.
+
+\begin{example}[Example name]
+Given a vector space $E$, a norm on $E$ is an application, denoted $||\cdot||$, $E$ in $\mathbb{R}^+=[0,+\infty[$ such that:
+\begin{align}
+& ||\mathbf{x}||=0\ \Rightarrow\ \mathbf{x}=\mathbf{0}\\
+& ||\lambda \mathbf{x}||=|\lambda|\cdot ||\mathbf{x}||\\
+& ||\mathbf{x}+\mathbf{y}||\leq ||\mathbf{x}||+||\mathbf{y}||
+\end{align}
+\end{example}
+
+% - - - - - - - - - - - - - - - - - - - - - - - - - - - %
+
+\section{Remarks}\index{Remarks}
+
+This is an example of a remark.
+
+\begin{remark}
+The concepts presented here are now in conventional employment in mathematics. Vector spaces are taken over the field $\mathbb{K}=\mathbb{R}$, however, established properties are easily extended to $\mathbb{K}=\mathbb{C}$.
+\end{remark}
+
+% - - - - - - - - - - - - - - - - - - - - - - - - - - - %
+
+\section{Further Information}\index{Further Information}
+
+This is an example of further information, warnings or such.
+
+\begin{furtherinfo}[Trigger warning]
+The concepts presented here are now in conventional employment in mathematics. Vector spaces are taken over the field $\mathbb{K}=\mathbb{R}$, however, established properties are easily extended to $\mathbb{K}=\mathbb{C}$.
+\end{furtherinfo}
+
+% - - - - - - - - - - - - - - - - - - - - - - - - - - - %
+
+\section{Exercises}\index{Exercises}
+
+This is an example of an exercise.
+
+\begin{exercise}
+This is a good place to ask a question to test learning progress or further cement ideas into students' minds.
+\end{exercise}
+
+
+%-------------------------------------------------------%
+%	CHAPTER 3
+%-------------------------------------------------------%
+
+\chapterimage{chapter_head_4.pdf}
+
+\chapter{Presenting Information}
+
+\section{Table}\index{Table}
+
+\begin{table}[h]
+\centering
+\begin{tabular}{l l l}
+\toprule
+\textbf{Treatments} & \textbf{Response 1} & \textbf{Response 2}\\
+\midrule
+Treatment 1 & 0.0003262 & 0.562 \\
+Treatment 2 & 0.0015681 & 0.910 \\
+Treatment 3 & 0.0009271 & 0.296 \\
+\bottomrule
+\end{tabular}
+\caption{Table caption}
+\end{table}
+
+% - - - - - - - - - - - - - - - - - - - - - - - - - - - %
+
+\section{Figure}\index{Figure}
+
+\begin{figure}[h]
+\centering\includegraphics[scale=0.5]{placeholder}
+\caption{Figure caption}
+\end{figure}
+
+%-------------------------------------------------------%
+%	BIBLIOGRAPHY
+%-------------------------------------------------------%
+
+\chapterimage{chapter_head_2.pdf}
+\chapter*{Bibliography}
+\addcontentsline{toc}{chapter}{\textcolor{mainColor}{Bibliography}}
+\section*{Books}
+\addcontentsline{toc}{section}{Books}
+\printbibliography[heading=bibempty,type=book]
+\section*{Articles}
+\addcontentsline{toc}{section}{Articles}
+\printbibliography[heading=bibempty,type=article]
+
+%-------------------------------------------------------%
+%	INDEX
+%-------------------------------------------------------%
+
+\cleardoublepage
+\setlength{\columnsep}{0.75cm}
+\addcontentsline{toc}{chapter}{\textcolor{mainColor}{Index}}
+\printindex
+
+\end{document}
